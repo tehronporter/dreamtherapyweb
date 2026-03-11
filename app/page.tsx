@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { CtaButton } from "@/components/cta-button";
-import { FeatureGrid } from "@/components/feature-grid";
 import { Section } from "@/components/section";
 import { buildMetadata, homeContent, siteConfig } from "@/lib/site";
 
@@ -16,74 +15,30 @@ export default function HomePage() {
   return (
     <main>
       <section className="hero">
-        <div className="hero__content">
-          <p className="eyebrow">{homeContent.hero.eyebrow}</p>
-          <h1 className="hero__title">{homeContent.hero.title}</h1>
-          <p className="hero__description">{homeContent.hero.description}</p>
-          <div className="button-row">
-            <CtaButton href={siteConfig.appStoreUrl}>
-              {homeContent.hero.primaryCta}
-            </CtaButton>
-            <CtaButton href="/privacy" variant="secondary">
-              {homeContent.hero.secondaryCta}
-            </CtaButton>
-          </div>
-          <div className="hero__mini-grid">
-            {homeContent.features.items.map((feature) => (
-              <div className="mini-feature" key={feature.name}>
-                <p className="mini-feature__title">{feature.name}</p>
-                <p className="mini-feature__text">{feature.summary}</p>
-              </div>
-            ))}
+        <div className="hero__center">
+          <p className="eyebrow hero__eyebrow">{homeContent.hero.eyebrow}</p>
+          <div className="hero__mascot-stage" aria-hidden="true">
+            <div className="hero__mascot-shadow" />
+            <Image
+              src="/images/dreambuddy_dreamchat.png"
+              alt=""
+              width={1536}
+              height={1024}
+              className="hero__mascot"
+              priority
+            />
           </div>
         </div>
 
-        <div className="hero__visual">
-          <div className="hero__glow" />
-          <div className="panel">
-            <div className="panel__header">
-              <div>
-                <p className="panel__title">DreamTherapy</p>
-                <p className="panel__meta">Reflection, journaling, and support</p>
-              </div>
-              <span className="pill">iOS app</span>
-            </div>
-            <div className="panel__body">
-              <div className="hero__image-wrap">
-                <Image
-                  src="/images/dreambuddy_dreamchat.png"
-                  alt="DreamTherapy mascot seated calmly as a supporting brand illustration."
-                  width={1536}
-                  height={1024}
-                  className="hero__image"
-                  priority
-                />
-              </div>
-              <div className="stack">
-                <div className="card card--soft">
-                  <p className="card__label">DreamChat</p>
-                  <p className="card__text">
-                    Explore a dream through guided AI reflection that stays
-                    curious, calm, and personal.
-                  </p>
-                </div>
-                <div className="card">
-                  <p className="card__label">DreamBook</p>
-                  <p className="card__text">
-                    Keep entries close, return to them later, and notice what
-                    repeats over time.
-                  </p>
-                </div>
-                <div className="card">
-                  <p className="card__label">DreamCircle</p>
-                  <p className="card__text">
-                    Broaden the lens with shared themes and carefully framed
-                    collective reflection.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div className="hero__content hero__content--centered">
+          <h1 className="hero__title">{homeContent.hero.title}</h1>
+          <p className="hero__description">{homeContent.hero.description}</p>
+          <div className="button-row button-row--centered">
+            <CtaButton href={siteConfig.appStoreUrl}>
+              {homeContent.hero.primaryCta}
+            </CtaButton>
           </div>
+          <p className="hero__orbit">{homeContent.hero.orbit}</p>
         </div>
       </section>
 
@@ -93,7 +48,33 @@ export default function HomePage() {
         title={homeContent.features.title}
         description={homeContent.features.description}
       >
-        <FeatureGrid />
+        <div className="story-list">
+          {homeContent.features.items.map((feature, index) => (
+            <details
+              key={feature.name}
+              className="story-item"
+              open={index === 0}
+            >
+              <summary className="story-item__summary">
+                <div className="story-item__index">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <div className="story-item__copy">
+                  <p className="story-item__eyebrow">{feature.name}</p>
+                  <h3 className="story-item__title">{feature.accent}</h3>
+                  <p className="story-item__summary-text">{feature.summary}</p>
+                </div>
+                <div className="story-item__toggle" aria-hidden="true">
+                  <span className="story-item__toggle-line" />
+                  <span className="story-item__toggle-line story-item__toggle-line--vertical" />
+                </div>
+              </summary>
+              <div className="story-item__body">
+                <p className="story-item__detail">{feature.detail}</p>
+              </div>
+            </details>
+          ))}
+        </div>
       </Section>
 
       <Section
@@ -101,43 +82,34 @@ export default function HomePage() {
         title={homeContent.trust.title}
         description={homeContent.trust.description}
       >
-        <div className="trust-grid">
-          <div className="card trust-grid__left" style={{ padding: "2rem" }}>
-            <div className="info-grid">
-              <div>
-                <p className="info-grid__item-title">Careful language</p>
-                <p className="info-grid__item-text">
-                  We describe DreamTherapy as a reflective journaling product,
-                  not as treatment, diagnosis, or emergency help.
-                </p>
-              </div>
-              <div>
-                <p className="info-grid__item-title">Transparent essentials</p>
-                <p className="info-grid__item-text">
-                  Privacy, terms, support, and deletion guidance stay public and
-                  easy to find.
-                </p>
-              </div>
-              <div>
-                <p className="info-grid__item-title">A calm surface</p>
-                <p className="info-grid__item-text">
-                  High whitespace, clear hierarchy, and restrained motion keep
-                  the interface from competing with the content.
-                </p>
-              </div>
-              <div>
-                <p className="info-grid__item-title">
-                  Replaceable launch details
-                </p>
-                <p className="info-grid__item-text">
-                  App Store and support contact details are wired centrally so
-                  they can be swapped quickly as launch assets arrive.
-                </p>
-              </div>
+        <div className="trust-grid trust-grid--refined">
+          <div className="trust-essay">
+            <div className="trust-essay__item">
+              <p className="trust-essay__title">Reflective, not clinical</p>
+              <p className="trust-essay__text">
+                DreamTherapy is positioned as a journaling and reflection
+                product, not as diagnosis, treatment, or emergency guidance.
+              </p>
+            </div>
+            <div className="trust-essay__item">
+              <p className="trust-essay__title">Public trust paths</p>
+              <p className="trust-essay__text">
+                Privacy, terms, support, and deletion guidance remain visible in
+                the footer and support flow instead of being buried behind the
+                app download.
+              </p>
+            </div>
+            <div className="trust-essay__item">
+              <p className="trust-essay__title">Quiet interaction design</p>
+              <p className="trust-essay__text">
+                The interface uses strong type, restrained motion, and generous
+                negative space so the product feels calm before it feels
+                technical.
+              </p>
             </div>
           </div>
 
-          <div className="card card--soft trust-grid__image">
+          <div className="trust-image-card">
             <Image
               src="/images/dreambuddy_dreamcircle.png"
               alt="DreamTherapy mascot group illustration representing DreamCircle."
@@ -154,38 +126,34 @@ export default function HomePage() {
         title={homeContent.support.title}
         description={homeContent.support.description}
       >
-        <div className="support-grid">
-          <div className="card">
-            <p className="card__title">Need a public support path before launch?</p>
-            <p className="card__text">
-              Review support options, account deletion guidance, and the
-              placeholder launch contact address.
+        <div className="support-links-grid">
+          <Link href="/support" className="support-link-card">
+            <p className="support-link-card__label">Support</p>
+            <p className="support-link-card__title">Get help or contact us.</p>
+            <p className="support-link-card__text">
+              Start with account access, billing questions, or general support.
             </p>
-            <div className="button-row">
-              <CtaButton href="/support" variant="secondary">
-                Visit support
-              </CtaButton>
-              <CtaButton href="/delete-account" variant="secondary">
-                Account deletion
-              </CtaButton>
-            </div>
-          </div>
+          </Link>
 
-          <div className="card card--mist">
-            <p className="card__title">Legal pages, kept simple.</p>
-            <p className="card__text">
-              The public compliance pages stay narrow, readable, and easy to
-              review on mobile before App Store submission.
+          <Link href="/privacy" className="support-link-card">
+            <p className="support-link-card__label">Privacy</p>
+            <p className="support-link-card__title">
+              Review how information may be handled.
             </p>
-            <div className="button-row">
-              <Link href="/privacy" className="text-link">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-link">
-                Terms of Use
-              </Link>
-            </div>
-          </div>
+            <p className="support-link-card__text">
+              Public privacy language stays concise, careful, and easy to read.
+            </p>
+          </Link>
+
+          <Link href="/delete-account" className="support-link-card">
+            <p className="support-link-card__label">Account deletion</p>
+            <p className="support-link-card__title">
+              Request removal when you are ready.
+            </p>
+            <p className="support-link-card__text">
+              Follow the deletion path without hunting through the app first.
+            </p>
+          </Link>
         </div>
       </Section>
     </main>

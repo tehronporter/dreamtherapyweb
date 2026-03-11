@@ -10,8 +10,8 @@ export function SiteFooter() {
           <div>
             <p className="site-footer__title">DreamTherapy</p>
             <p className="site-footer__text">
-              A calm, public home for product details, support, and launch-day
-              trust.
+              A calm, public home for product details, support, privacy, and
+              account guidance.
             </p>
           </div>
           <a

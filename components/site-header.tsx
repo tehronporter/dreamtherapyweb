@@ -7,13 +7,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link href="/" className="site-brand">
-          <div className="site-brand__mark">
-            DT
-          </div>
-          <div>
-            <p className="site-brand__name">{siteConfig.name}</p>
-            <p className="site-brand__meta">Dream journaling</p>
-          </div>
+          <div className="site-brand__mark">DT</div>
         </Link>
 
         <nav className="site-nav">

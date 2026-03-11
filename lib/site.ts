@@ -31,28 +31,34 @@ export const homeContent = {
     description:
       "Record dreams in a calm, personal space, then reflect on them with thoughtful AI guidance designed for curiosity, not noise.",
     primaryCta: "View on the App Store",
-    secondaryCta: "Read the Privacy Policy",
+    orbit: "DreamChat · DreamBook · DreamCircle",
   },
   features: {
-    eyebrow: "Core experience",
-    title: "Three ways to stay close to your dreams.",
+    eyebrow: "Feature architecture",
+    title: "Three layers, revealed one at a time.",
     description:
-      "DreamTherapy is built around a simple rhythm: capture what you remember, return when you are ready, and reflect with care.",
+      "The product stays intentionally simple on first contact. Each layer deepens the experience without making the interface feel crowded.",
     items: [
       {
         name: "DreamChat",
         summary: "A conversational reflection layer for sitting with a dream a little longer.",
-        detail: "Use guided AI dialogue to explore symbols, moods, and possible meanings without turning the experience into a chatbot gimmick.",
+        detail:
+          "Use guided AI dialogue to explore symbols, moods, and possible meanings without turning the experience into a chatbot gimmick.",
+        accent: "Reflect in motion",
       },
       {
         name: "DreamBook",
         summary: "Your private archive of dreams, patterns, and returning details.",
-        detail: "Save entries, revisit them over time, and notice the imagery or themes that keep finding their way back.",
+        detail:
+          "Save entries, revisit them over time, and notice the imagery or themes that keep finding their way back.",
+        accent: "Keep what returns",
       },
       {
         name: "DreamCircle",
         summary: "A more open space for shared dream themes and collective reflection.",
-        detail: "Explore the broader conversation around dreaming in a way that feels careful, anonymous, and grounded rather than performative.",
+        detail:
+          "Explore the broader conversation around dreaming in a way that feels careful, anonymous, and grounded rather than performative.",
+        accent: "Step into the wider pattern",
       },
     ],
   },
@@ -64,9 +70,9 @@ export const homeContent = {
   },
   support: {
     eyebrow: "Support and legal",
-    title: "Everything you need for help, account requests, and launch-day trust.",
+    title: "Support, privacy, and account help stay close at hand.",
     description:
-      "Find support details, review our policies, or learn how to request account deletion before you download.",
+      "The launch surface stays minimal, but the important public paths remain easy to reach before and after download.",
   },
 };
 
