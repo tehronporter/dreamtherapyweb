@@ -153,25 +153,37 @@ summary::-webkit-details-marker {
   padding-bottom: 1rem;
 }
 
-.site-brand {
+.site-logo {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.site-brand__mark {
+.site-logo__mark {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.7rem;
-  height: 2.7rem;
-  border: 1px solid var(--divider);
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
   border-radius: 999px;
-  background: var(--surface);
+}
+
+.site-logo__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.site-logo__image--sm {
+  transform: scale(0.98);
+}
+
+.site-logo__wordmark {
   color: var(--ink);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: -0.03em;
 }
 
 .site-nav {
@@ -263,6 +275,8 @@ summary::-webkit-details-marker {
   flex-direction: column;
   align-items: center;
   gap: 1.75rem;
+  background: #ffffff;
+  color: #111111;
   padding-top: 4.25rem;
   padding-bottom: 5.75rem;
   text-align: center;
@@ -284,6 +298,7 @@ summary::-webkit-details-marker {
   position: relative;
   width: min(100%, 28rem);
   padding: 1rem 0 0.5rem;
+  background: #ffffff;
 }
 
 .hero__mascot-shadow {
@@ -338,6 +353,11 @@ summary::-webkit-details-marker {
   font-weight: 900;
   letter-spacing: -0.045em;
   text-wrap: balance;
+  color: #05070b;
+}
+
+.hero__title-emphasis {
+  color: var(--brand);
 }
 
 .page-title {
@@ -359,11 +379,12 @@ summary::-webkit-details-marker {
   margin-top: 1.5rem;
   font-size: 1.08rem;
   font-weight: 300;
+  color: #6c6c6f;
 }
 
 .hero__orbit {
   margin: 1.2rem 0 0;
-  color: var(--text-muted);
+  color: #8b8d92;
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -715,6 +736,10 @@ summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.site-footer__brand {
+  display: inline-flex;
 }
 
 .site-footer__title {

@@ -13,7 +13,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#2E53FF",
     icons: [
       {
-        src: "/images/dreambuddy_iosstore.png",
+        src: "/images/oldreambuddy01.png",
         sizes: "1536x1024",
         type: "image/png",
       },

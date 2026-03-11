@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     "A private place to record dreams, revisit them over time, and reflect with thoughtful AI guidance.",
   url: "https://dreamtherapy.app",
-  ogImage: "/images/dreambuddy_iosstore.png",
+  ogImage: "/images/oldreambuddy01.png",
   supportEmail: "support@dreamtherapy-placeholder.com",
   appStoreUrl: "https://apps.apple.com/app/id0000000000",
   lastUpdated: "March 10, 2026",
@@ -27,38 +27,40 @@ export const siteConfig = {
 export const homeContent = {
   hero: {
     eyebrow: "Private dream journaling",
-    title: "A quieter place to remember what visited you last night.",
+    titleLead: "Your Dreams Carry",
+    titleEmphasis: "Meaning.",
+    titleEnd: "We're Here to Help You Listen.",
     description:
-      "Record dreams in a calm, personal space, then reflect on them with thoughtful AI guidance designed for curiosity, not noise.",
+      "DreamTherapy gently decodes the moods, symbols, and patterns in your dreams — especially for those processing trauma, grief, or deep emotional shifts.",
     primaryCta: "View on the App Store",
     orbit: "DreamChat · DreamBook · DreamCircle",
   },
   features: {
     eyebrow: "Feature architecture",
-    title: "Three layers, revealed one at a time.",
+    title: "The DreamTherapy Flow",
     description:
-      "The product stays intentionally simple on first contact. Each layer deepens the experience without making the interface feel crowded.",
+      "A daily rhythm of dreaming, interpreting, and reflecting.",
     items: [
       {
         name: "DreamChat",
         summary: "A conversational reflection layer for sitting with a dream a little longer.",
         detail:
           "Use guided AI dialogue to explore symbols, moods, and possible meanings without turning the experience into a chatbot gimmick.",
-        accent: "Reflect in motion",
+        accent: "Interpret moods, symbols, and patterns",
       },
       {
         name: "DreamBook",
         summary: "Your private archive of dreams, patterns, and returning details.",
         detail:
           "Save entries, revisit them over time, and notice the imagery or themes that keep finding their way back.",
-        accent: "Keep what returns",
+        accent: "Dream in your own words",
       },
       {
         name: "DreamCircle",
         summary: "A more open space for shared dream themes and collective reflection.",
         detail:
           "Explore the broader conversation around dreaming in a way that feels careful, anonymous, and grounded rather than performative.",
-        accent: "Step into the wider pattern",
+        accent: "Reflect on what returns over time",
       },
     ],
   },

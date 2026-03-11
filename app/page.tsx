@@ -31,7 +31,14 @@ export default function HomePage() {
         </div>
 
         <div className="hero__content hero__content--centered">
-          <h1 className="hero__title">{homeContent.hero.title}</h1>
+          <h1 className="hero__title">
+            {homeContent.hero.titleLead}{" "}
+            <span className="hero__title-emphasis">
+              {homeContent.hero.titleEmphasis}
+            </span>
+            <br />
+            {homeContent.hero.titleEnd}
+          </h1>
           <p className="hero__description">{homeContent.hero.description}</p>
           <div className="button-row button-row--centered">
             <CtaButton href={siteConfig.appStoreUrl}>

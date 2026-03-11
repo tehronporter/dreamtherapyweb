@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   ...buildMetadata(siteConfig.name, siteConfig.description),
   title: siteConfig.name,
   icons: {
-    icon: "/images/dreambuddy_iosstore.png",
-    apple: "/images/dreambuddy_iosstore.png",
+    icon: "/images/oldreambuddy01.png",
+    apple: "/images/oldreambuddy01.png",
   },
 };
 
