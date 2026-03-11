@@ -349,9 +349,10 @@ summary::-webkit-details-marker {
 }
 
 .hero__title {
-  font-size: clamp(3.6rem, 9vw, 7rem);
+  font-size: clamp(2.85rem, 6.8vw, 5.3rem);
   font-weight: 900;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.04em;
+  max-width: 15ch;
   text-wrap: balance;
   color: #05070b;
 }
