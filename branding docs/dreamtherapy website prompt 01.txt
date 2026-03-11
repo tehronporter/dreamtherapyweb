@@ -1,0 +1,466 @@
+﻿You are working inside the DreamTherapy website repo.
+
+
+Your job is to design and build a minimal, premium, production-ready public website for DreamTherapy that will be deployed on Vercel.
+
+
+This website is not the iOS app itself. It is the public-facing marketing, trust, support, and compliance website for the DreamTherapy app.
+
+
+IMPORTANT CONTEXT
+- This repo is separate from the iOS app repo on purpose.
+- The website must stay simple, minimalistic, and brand-aligned.
+- Use the local brand guideline documents in this repo/project folder as the visual and tonal source of truth.
+- Use the local image assets in this repo/project folder selectively and tastefully.
+- Do not force imagery if the available assets are weak for the homepage.
+- The site should feel like DreamTherapy / TEHSO, not like a generic template.
+
+
+APP CONTEXT TO USE
+DreamTherapy is a private dream journaling app with AI-powered reflection.
+Its main product pillars/features are:
+1. DreamChat
+2. DreamBook
+3. DreamCircle
+
+
+These should be treated as the core feature architecture of the app and reflected clearly, simply, and elegantly on the website.
+
+
+Interpret them like this unless the local docs provide stronger exact wording:
+- DreamChat = conversational dream reflection / AI-guided dream dialogue
+- DreamBook = private dream journal / saved entries / personal archive
+- DreamCircle = community or shared/social dream layer, if present in the product docs
+
+
+Do not overstate features beyond what is supported by the app docs.
+If the local documents define these differently, follow the docs instead.
+
+
+WEBSITE PURPOSE
+This site has five jobs:
+1. Clearly explain what DreamTherapy is
+2. Make the product feel trustworthy, premium, and emotionally safe
+3. Provide public privacy/compliance pages needed for App Store submission
+4. Give users a support destination
+5. Create a scalable foundation for future marketing expansion
+
+
+APPLE / COMPLIANCE CONTEXT
+Build the website so it supports App Store readiness.
+The site must include:
+- a public Privacy Policy page
+- a public Terms of Use page
+- easy access to those pages from the footer and support flow
+
+
+Write the privacy and terms content carefully and conservatively:
+- do not invent fake data practices
+- do not make medical or therapeutic claims
+- do not say the app diagnoses, treats, or replaces therapy
+- do not promise absolute privacy/security unless explicitly verified
+- use plain language where possible while still being structured enough for launch use
+
+
+SITE STRUCTURE
+Build the following routes:
+
+
+/                Homepage
+/privacy         Privacy Policy
+/terms           Terms of Use
+/support         Support page
+/delete-account  Optional but recommended simple account deletion/help page
+
+
+If /delete-account fits cleanly, include it. If not, at minimum make deletion/account help discoverable on /support.
+
+
+TECH STACK
+Use a clean, Vercel-friendly setup:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- App Router preferred
+- clean reusable components
+- semantic HTML
+- responsive layout
+- no unnecessary dependencies
+
+
+If the repo is empty, scaffold the project cleanly.
+
+
+DESIGN DIRECTION
+The site should feel:
+- calm
+- premium
+- minimal
+- thoughtful
+- emotionally intelligent
+- high whitespace
+- typography-led
+- trustworthy
+- modern but restrained
+
+
+The site should NOT feel:
+- loud
+- startup-generic
+- cluttered
+- overly spiritual
+- overly clinical
+- over-animated
+- like a therapy replacement
+- like a noisy SaaS landing page
+
+
+Use the local brand docs to define:
+- colors
+- typography
+- logo treatment
+- spacing rhythm
+- imagery treatment
+- tone and language preferences
+- any “avoid this” design guidance
+
+
+If the brand docs are incomplete, make elegant minimal choices that fit DreamTherapy’s app identity.
+
+
+HOMEPAGE REQUIREMENTS
+Build a very clean homepage with these sections:
+
+
+1. HERO
+Include:
+- DreamTherapy logo/wordmark if available
+- one clear value proposition
+- one primary CTA placeholder for App Store download
+- one secondary CTA such as Privacy Policy or Learn More
+- optional subtle image support if a local asset truly improves the composition
+
+
+Tone direction examples:
+- Private dream journaling with thoughtful AI reflections.
+- A quieter place to record dreams and reflect on them.
+- Capture dreams. Reflect with care.
+
+
+Do not use all of these verbatim unless they fit. Use them as tone references.
+
+
+2. CORE FEATURES SECTION
+Create a clean, elegant section highlighting the three main features:
+- DreamChat
+- DreamBook
+- DreamCircle
+
+
+Each should have:
+- feature title
+- one short sentence
+- optional tiny supporting line if needed
+
+
+Keep this section minimal.
+Do not use huge cards or over-explained blocks.
+It should feel premium and balanced.
+
+
+3. TRUST / PRIVACY SECTION
+Add a short section communicating that DreamTherapy is built for personal reflection and that dream content can feel private and personal.
+Keep it brief, calm, and trustworthy.
+Do not make exaggerated privacy claims.
+
+
+4. SIMPLE SUPPORT / LEGAL CTA
+Add a small section or footer prompt that points users to:
+- Privacy Policy
+- Terms
+- Support
+
+
+5. FOOTER
+Include:
+- Privacy Policy
+- Terms of Use
+- Support
+- optional Delete Account
+- support email placeholder
+- copyright line if appropriate
+
+
+PRIVACY POLICY PAGE REQUIREMENTS
+Create a Privacy Policy page that is:
+- cleanly designed
+- easy to read
+- narrow readable content width
+- clearly sectioned
+- plain-language but launch-appropriate
+
+
+It must include at minimum:
+
+
+1. Introduction
+- who DreamTherapy is
+- why the policy exists
+- note that dream content can feel personal
+
+
+2. Information we may collect
+Use careful, realistic categories such as:
+- account information such as email if users create an account
+- dream entries and journal content
+- voice input/audio if applicable
+- usage, analytics, and diagnostics data
+- purchase/subscription information if applicable
+- support messages
+
+
+3. How information may be used
+Examples:
+- provide app features
+- save and organize dream entries
+- generate reflections
+- improve product quality and reliability
+- support reminders/notifications if enabled
+- provide customer support
+
+
+4. AI processing
+Explain clearly and conservatively that if users submit dream content for AI-generated reflections, that content may be processed to provide those reflections, depending on the app’s setup.
+
+
+5. Sharing/service providers
+Use careful language to explain that information may be processed by service providers used to operate the app, such as hosting, analytics, subscriptions, or AI infrastructure, when applicable.
+
+
+6. Data retention
+Use standard careful language around retaining data as needed to operate the service, comply with obligations, resolve disputes, or enforce agreements.
+
+
+7. User choices
+Include:
+- managing account details
+- deleting entries
+- turning off notifications
+- contacting support
+- requesting deletion where applicable
+
+
+8. Security
+Use non-absolute language such as reasonable safeguards.
+
+
+9. Children’s privacy
+State the service is not intended for children if that aligns with the app.
+
+
+10. Changes to this policy
+
+
+11. Contact information
+Use support email placeholder.
+
+
+TERMS OF USE PAGE REQUIREMENTS
+Create a Terms page that is:
+- clear
+- minimal
+- readable
+- structured
+- app-appropriate
+
+
+Include at minimum:
+1. Acceptance of terms
+2. Eligibility / age
+3. Accounts
+4. Acceptable use
+5. Intellectual property
+6. DreamChat / AI reflections disclaimer
+7. No medical, psychiatric, or therapeutic service claim
+8. Subscription/billing section if applicable
+9. Termination
+10. Disclaimer of warranties
+11. Limitation of liability
+12. Governing law placeholder
+13. Contact information
+
+
+Important:
+Clearly state that DreamTherapy is for journaling, reflection, and informational use, and is not a substitute for professional care.
+
+
+SUPPORT PAGE REQUIREMENTS
+Create a simple, polished support page with:
+- short intro
+- support email placeholder
+- links to privacy and terms
+- note about account help and privacy questions
+- note about deletion/data requests if appropriate
+- optional tiny FAQ section with 3 to 5 concise questions if useful
+
+
+DELETE ACCOUNT PAGE
+If included, keep it simple:
+- how a user can request account deletion
+- what kind of data may be removed
+- support contact
+- no complex flows unless already known from docs
+
+
+COPY / TONE RULES
+All copy should feel:
+- calm
+- intimate
+- premium
+- simple
+- warm but not gushy
+- emotionally intelligent
+- trustworthy
+- minimal
+
+
+Avoid:
+- cheesy wellness clichés
+- fake transformation language
+- manipulative urgency
+- pseudo-medical claims
+- over-spiritual claims
+- hype
+- long walls of marketing text
+
+
+Use short sections and strong hierarchy.
+
+
+CONTENT TO INCLUDE FROM PRODUCT CONTEXT
+The website should reflect these product truths:
+- DreamTherapy is centered on private dream journaling and reflection
+- DreamChat, DreamBook, and DreamCircle are the main core product areas
+- the product helps users capture, revisit, and reflect on dreams
+- dream content can be highly personal
+- the app uses AI for reflective output
+- the app should be framed as reflective/informational, not medical
+
+
+DO NOT
+- do not build a bloated landing page
+- do not add made-up testimonials
+- do not add team bios unless provided
+- do not add pricing unless clearly needed and documented
+- do not invent screenshots
+- do not use placeholder lorem ipsum
+- do not overcomplicate the homepage
+- do not turn the legal pages into ugly, neglected afterthoughts
+
+
+ASSET + DOC REVIEW PHASE
+Before building, inspect all local docs/assets and summarize:
+1. available brand docs
+2. available image assets
+3. usable colors/typography/logo rules
+4. any product messaging that should influence website copy
+5. any direct definitions for DreamChat, DreamBook, and DreamCircle
+
+
+If the docs provide stronger exact language than the prompt, follow the docs.
+
+
+IMPLEMENTATION REQUIREMENTS
+Build cleanly with:
+- reusable layout
+- reusable content container
+- clean navigation/footer
+- page metadata
+- responsive spacing
+- accessible contrast
+- proper focus states
+- semantic headings
+- polished mobile experience
+- fast load performance
+
+
+Also include:
+- metadata titles/descriptions for each page
+- favicon/site icon support if assets exist
+- Open Graph basics if easy
+
+
+README REQUIREMENTS
+Create a short README that explains:
+- what the site is
+- how to run locally
+- how to deploy to Vercel
+- which pages exist
+- where legal copy should be updated later
+- any assumptions made during writing
+
+
+WORKFLOW
+Work in this order:
+
+
+PHASE 1
+Inspect local brand docs and image assets.
+Summarize findings before implementation.
+
+
+PHASE 2
+Scaffold project if needed.
+Set up Next.js + TypeScript + Tailwind.
+
+
+PHASE 3
+Build global layout, styles, header/footer, metadata.
+
+
+PHASE 4
+Build homepage.
+Make sure DreamChat, DreamBook, and DreamCircle are represented cleanly.
+
+
+PHASE 5
+Build privacy, terms, support, and optional delete-account pages.
+
+
+PHASE 6
+Polish spacing, hierarchy, responsiveness, and brand feel.
+
+
+PHASE 7
+Validate:
+- mobile responsiveness
+- route integrity
+- footer links
+- legal page accessibility
+- Vercel readiness
+- no broken assets
+- no placeholder junk left behind
+
+
+FINAL DELIVERABLES
+At the end, provide:
+1. completed codebase
+2. short summary of what was built
+3. list of assets/docs used
+4. list of assumptions made about app behavior/privacy/terms
+5. notes on anything that should be updated once final app data flow is confirmed
+
+
+FINAL OUTCOME
+The finished website should feel like a quiet, polished front door to DreamTherapy.
+
+
+A visitor should immediately understand:
+- what DreamTherapy is
+- what DreamChat, DreamBook, and DreamCircle are at a high level
+- that the brand is premium and intentional
+- that privacy/support information is easy to find
+- that the app is for reflection, not treatment
+
+
+Now begin by scanning the local brand docs and image assets, summarizing what you found, then proceed to implementation.

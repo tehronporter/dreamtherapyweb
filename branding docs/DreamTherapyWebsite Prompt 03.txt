@@ -1,0 +1,362 @@
+﻿You are writing the Privacy Policy and Terms of Use pages for the DreamTherapy website.
+
+
+Your job is to generate clear, launch-ready legal copy that is appropriate for an iOS app and aligned with Apple App Store requirements.
+
+
+Before writing anything, read and reference these Apple documentation pages:
+
+
+Apple App Privacy Details:
+https://developer.apple.com/app-store/app-privacy-details/
+
+
+Apple App Store Review Guidelines:
+https://developer.apple.com/app-store/review/guidelines/
+
+
+Use these documents as the authoritative reference for how privacy disclosures and app behavior should be described.
+
+
+Do NOT invent legal claims that contradict Apple’s rules or typical mobile app practices.
+
+
+CONTEXT ABOUT THE PRODUCT
+
+
+DreamTherapy is an iOS app centered around private dream journaling and AI-powered reflection.
+
+
+The app has three primary product features:
+
+
+DreamChat
+A conversational reflection layer where users can explore their dreams through AI-guided dialogue.
+
+
+DreamBook
+A private dream journal where users save, revisit, and organize dream entries over time.
+
+
+DreamCircle
+A collective dream space that may allow users to explore shared dream themes or community reflection.
+
+
+The app should be positioned as a reflective journaling product, not as a medical, psychological, or therapeutic service.
+
+
+DreamTherapy should NOT claim to:
+- diagnose mental health conditions
+- replace therapy
+- provide medical advice
+- provide psychological treatment
+
+
+AI reflections should be framed as informational and reflective only.
+
+
+GENERAL WRITING PRINCIPLES
+
+
+All legal text should be:
+
+
+clear  
+plain-language where possible  
+accurate but not over-technical  
+structured like real policy pages  
+easy to read on mobile  
+consistent with Apple privacy expectations  
+
+
+Avoid:
+
+
+overpromising privacy or security  
+fake legal claims  
+medical or therapeutic claims  
+vague or evasive wording  
+
+
+When uncertain about implementation details, use careful language such as:
+
+
+"may collect"  
+"when you choose to provide it"  
+"when applicable"  
+
+
+But do not make the document meaningless or vague.
+
+
+SITE STRUCTURE
+
+
+You will produce three complete documents:
+
+
+Privacy Policy  
+Terms of Use  
+Support / Data Request Notes
+
+
+Each must be structured and formatted clearly for a website page.
+
+
+PRIVACY POLICY REQUIREMENTS
+
+
+Create a full Privacy Policy page with these sections:
+
+
+1. Introduction
+
+
+Explain what DreamTherapy is and why this policy exists.
+
+
+Mention that dream content can be personal and the goal of the policy is transparency about how information may be collected and used.
+
+
+2. Information We May Collect
+
+
+Include realistic categories that apply to an app like DreamTherapy:
+
+
+Account information such as email address if users create an account
+
+
+Dream entries and journal content submitted by users
+
+
+Voice recordings or audio input if the app supports voice dream capture
+
+
+Usage and diagnostics information related to app performance
+
+
+Device information needed for functionality or analytics
+
+
+Purchase and subscription information if premium features exist
+
+
+Support messages sent by users
+
+
+3. How Information May Be Used
+
+
+Explain possible uses such as:
+
+
+providing core app functionality  
+saving and organizing dream entries  
+generating dream reflections using AI systems  
+improving product performance and reliability  
+providing reminders or notifications if enabled  
+providing user support  
+
+
+4. AI Processing
+
+
+Explain carefully that when users submit dream content for AI reflections, that information may be processed by systems used to generate those reflections.
+
+
+Make clear that AI output is informational and reflective.
+
+
+Do not claim AI training behavior unless confirmed.
+
+
+5. Sharing and Service Providers
+
+
+Explain that DreamTherapy may rely on service providers to operate the app.
+
+
+Examples may include:
+
+
+hosting or infrastructure providers  
+analytics services  
+subscription/payment infrastructure  
+AI processing providers  
+
+
+Use general language unless exact providers are known.
+
+
+6. Data Retention
+
+
+Explain that information may be retained as long as needed to provide the service and meet legal obligations.
+
+
+7. User Choices
+
+
+Include user rights such as:
+
+
+accessing or updating account information  
+deleting entries  
+managing notifications  
+requesting account deletion  
+contacting support  
+
+
+8. Security
+
+
+Explain that reasonable safeguards are used to protect information but no system can guarantee absolute security.
+
+
+9. Children’s Privacy
+
+
+Explain that the app is not intended for children below the applicable age threshold.
+
+
+10. Changes to This Policy
+
+
+Explain that the policy may be updated and the "Last Updated" date will change.
+
+
+11. Contact
+
+
+Provide a placeholder support email for privacy questions.
+
+
+TERMS OF USE REQUIREMENTS
+
+
+Create a Terms of Use document with these sections:
+
+
+1. Acceptance of Terms
+
+
+Explain that using DreamTherapy means agreeing to the terms.
+
+
+2. Eligibility
+
+
+State that users must meet the required age and legal eligibility to use the service.
+
+
+3. Accounts
+
+
+Explain that users are responsible for maintaining their account information.
+
+
+4. Acceptable Use
+
+
+Users should not misuse the service or violate laws.
+
+
+5. Intellectual Property
+
+
+Explain that DreamTherapy and its software are protected by intellectual property laws.
+
+
+6. AI Reflection Disclaimer
+
+
+Explain that DreamChat and other AI features provide reflective insights only and should not be considered medical or psychological advice.
+
+
+7. No Medical or Mental Health Service
+
+
+Clearly state that DreamTherapy is not a medical, psychiatric, or therapeutic service and is not a substitute for professional care.
+
+
+8. Subscriptions and Billing
+
+
+If premium features exist, explain that purchases may be handled through the Apple App Store and are subject to Apple's billing rules.
+
+
+9. Termination
+
+
+Explain that access may be suspended or terminated for violations of the terms.
+
+
+10. Disclaimer of Warranties
+
+
+Explain that the service is provided “as is”.
+
+
+11. Limitation of Liability
+
+
+Limit liability consistent with standard app terms.
+
+
+12. Governing Law
+
+
+Include a placeholder jurisdiction.
+
+
+13. Contact
+
+
+Provide support contact information.
+
+
+SUPPORT AND DATA REQUEST NOTES
+
+
+Create a short support information section explaining how users can:
+
+
+contact support  
+request help with their account  
+request data deletion  
+ask privacy questions  
+
+
+QUALITY REQUIREMENTS
+
+
+Ensure:
+
+
+sections are clearly labeled  
+headings are easy to scan  
+language is understandable  
+tone is consistent with a calm, premium product  
+
+
+Avoid:
+
+
+legalese overload  
+marketing language in legal sections  
+conflicting statements with Apple rules  
+
+
+FINAL OUTPUT FORMAT
+
+
+Return the work organized into:
+
+
+1. Privacy Policy (complete page)
+2. Terms of Use (complete page)
+3. Support / Data Request information
+
+
+Include a short note explaining any assumptions made about the app's data practices.
