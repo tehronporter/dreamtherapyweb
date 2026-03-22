@@ -153,6 +153,12 @@ summary::-webkit-details-marker {
   padding-bottom: 1rem;
 }
 
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .site-logo {
   display: inline-flex;
   align-items: center;
@@ -216,6 +222,21 @@ summary::-webkit-details-marker {
 .site-footer__links a:hover {
   color: var(--ink);
   opacity: 1;
+}
+
+.site-header__waitlist-button {
+  min-height: 2.8rem;
+  padding: 0.75rem 1.1rem;
+  background: color-mix(in srgb, var(--surface) 100%, transparent);
+  color: var(--ink);
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.site-header__waitlist-button:hover {
+  border-color: color-mix(in srgb, var(--brand) 22%, var(--divider));
+  background: color-mix(in srgb, var(--surface-strong) 100%, transparent);
 }
 
 .button {
@@ -784,6 +805,165 @@ summary::-webkit-details-marker {
   font-size: 0.8rem;
 }
 
+.waitlist-dialog {
+  width: min(calc(100% - 2rem), 32rem);
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.waitlist-dialog::backdrop {
+  background: rgba(5, 7, 11, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.waitlist-dialog__panel {
+  position: relative;
+  border: 1px solid var(--divider);
+  border-radius: 1.75rem;
+  padding: 1.75rem;
+  background:
+    radial-gradient(circle at top, rgba(46, 83, 255, 0.12), transparent 52%),
+    color-mix(in srgb, var(--canvas-elevated) 92%, transparent);
+  box-shadow: var(--shadow-long);
+}
+
+.waitlist-dialog__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--divider);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.waitlist-dialog__eyebrow {
+  margin: 0;
+  color: var(--brand);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.waitlist-dialog__title {
+  margin: 0.8rem 0 0;
+  color: var(--ink);
+  font-size: clamp(2rem, 6vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.waitlist-dialog__description {
+  margin: 0.9rem 0 0;
+  max-width: 30rem;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
+.waitlist-form {
+  margin-top: 1.5rem;
+}
+
+.waitlist-form__label {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.waitlist-form__input {
+  width: 100%;
+  min-height: 3.35rem;
+  border: 1px solid var(--divider);
+  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+  background: color-mix(in srgb, var(--canvas) 72%, transparent);
+  color: var(--ink);
+  font: inherit;
+}
+
+.waitlist-form__input::placeholder {
+  color: var(--text-muted);
+}
+
+.waitlist-form__input:focus-visible,
+.waitlist-dialog__close:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.waitlist-form__submit,
+.waitlist-dialog__done {
+  width: 100%;
+  margin-top: 0.95rem;
+}
+
+.waitlist-form__helper,
+.waitlist-form__privacy,
+.waitlist-form__status,
+.waitlist-dialog__success-text {
+  margin: 0.9rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.waitlist-form__privacy {
+  margin-top: 0.4rem;
+}
+
+.waitlist-form__status {
+  min-height: 1.5rem;
+}
+
+.waitlist-form__status--error {
+  color: #ffb5b5;
+}
+
+.waitlist-form__status--submitting {
+  color: var(--text-secondary);
+}
+
+.waitlist-dialog__success {
+  margin-top: 1.75rem;
+  border: 1px solid var(--divider);
+  border-radius: 1.2rem;
+  padding: 1.25rem;
+  background: color-mix(in srgb, var(--surface) 100%, transparent);
+}
+
+.waitlist-dialog__success-title {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.waitlist-form__honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (min-width: 640px) {
   .site-header__inner,
   .site-footer__inner,
@@ -822,9 +1002,18 @@ summary::-webkit-details-marker {
     align-items: stretch;
   }
 
+  .site-header__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .site-nav {
     gap: 0.9rem;
     justify-content: space-between;
+  }
+
+  .site-header__waitlist-button {
+    width: 100%;
   }
 
   .story-item__summary {
@@ -849,6 +1038,15 @@ summary::-webkit-details-marker {
   .hero {
     padding-top: 3.5rem;
     padding-bottom: 4.5rem;
+  }
+
+  .waitlist-dialog {
+    width: min(calc(100% - 1rem), 32rem);
+  }
+
+  .waitlist-dialog__panel {
+    border-radius: 1.35rem;
+    padding: 1.35rem;
   }
 
   .trust-essay,

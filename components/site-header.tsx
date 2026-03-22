@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { siteConfig } from "@/lib/site";
 import { SiteLogo } from "@/components/site-logo";
+import { WaitlistModal } from "@/components/waitlist-modal";
 
 export function SiteHeader() {
   return (
@@ -9,13 +10,16 @@ export function SiteHeader() {
       <div className="site-header__inner">
         <SiteLogo />
 
-        <nav className="site-nav">
-          {siteConfig.navLinks.map((link) => (
-            <Link key={link.href} href={link.href}>
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="site-header__actions">
+          <nav className="site-nav" aria-label="Primary">
+            {siteConfig.navLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <WaitlistModal />
+        </div>
       </div>
     </header>
   );
