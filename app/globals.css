@@ -404,6 +404,15 @@ summary::-webkit-details-marker {
   color: #6c6c6f;
 }
 
+.hero__availability {
+  margin: 1rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .hero__orbit {
   margin: 1.2rem 0 0;
   color: #8b8d92;

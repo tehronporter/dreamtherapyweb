@@ -5,6 +5,12 @@ import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 
 import { isValidEmail, normalizeEmail } from "@/lib/waitlist";
 
+type WaitlistModalProps = {
+  buttonLabel?: string;
+  buttonVariant?: "primary" | "secondary";
+  buttonClassName?: string;
+};
+
 type WaitlistState =
   | {
       status: "idle" | "submitting";
@@ -25,7 +31,11 @@ function getUtmValue(searchParams: URLSearchParams, key: string) {
   return value ? value.slice(0, 200) : null;
 }
 
-export function WaitlistModal() {
+export function WaitlistModal({
+  buttonLabel = "Join the waitlist",
+  buttonVariant = "secondary",
+  buttonClassName = "",
+}: WaitlistModalProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -156,11 +166,11 @@ export function WaitlistModal() {
     <>
       <button
         type="button"
-        className="button button--secondary site-header__waitlist-button"
+        className={`button button--${buttonVariant} ${buttonClassName}`.trim()}
         onClick={openModal}
         ref={triggerRef}
       >
-        Join the waitlist
+        {buttonLabel}
       </button>
 
       <dialog

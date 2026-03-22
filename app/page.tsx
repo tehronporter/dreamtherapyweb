@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { CtaButton } from "@/components/cta-button";
 import { Section } from "@/components/section";
-import { buildMetadata, homeContent, siteConfig } from "@/lib/site";
+import { WaitlistModal } from "@/components/waitlist-modal";
+import { buildMetadata, homeContent } from "@/lib/site";
 
 export const metadata = buildMetadata(
   "Home",
@@ -41,10 +41,12 @@ export default function HomePage() {
           </h1>
           <p className="hero__description">{homeContent.hero.description}</p>
           <div className="button-row button-row--centered">
-            <CtaButton href={siteConfig.appStoreUrl}>
-              {homeContent.hero.primaryCta}
-            </CtaButton>
+            <WaitlistModal
+              buttonLabel={homeContent.hero.primaryCta}
+              buttonVariant="primary"
+            />
           </div>
+          <p className="hero__availability">{homeContent.hero.availabilityNote}</p>
           <p className="hero__orbit">{homeContent.hero.orbit}</p>
         </div>
       </section>
@@ -102,8 +104,8 @@ export default function HomePage() {
               <p className="trust-essay__title">Public trust paths</p>
               <p className="trust-essay__text">
                 Privacy, terms, support, and deletion guidance remain visible in
-                the footer and support flow instead of being buried behind the
-                app download.
+                the footer and support flow instead of being held back until
+                release.
               </p>
             </div>
             <div className="trust-essay__item">

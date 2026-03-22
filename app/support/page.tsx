@@ -3,7 +3,7 @@ import { buildMetadata, siteConfig, supportTopics } from "@/lib/site";
 
 export const metadata = buildMetadata(
   "Support",
-  "Find DreamTherapy support details, account help, billing guidance, and links to privacy and deletion requests.",
+  "Find DreamTherapy support details, waitlist help, privacy guidance, and links to account and deletion requests.",
   "/support",
 );
 
@@ -14,7 +14,7 @@ export default function SupportPage() {
         <div style={{ maxWidth: "38rem" }}>
           <p className="eyebrow">Support</p>
           <h1 className="page-title">
-            Help, account questions, and launch-day essentials.
+            Help, privacy questions, and prelaunch essentials.
           </h1>
           <p className="page-intro">
             If you need help with DreamTherapy, want to ask a privacy question,

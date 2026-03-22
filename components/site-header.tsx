@@ -18,7 +18,7 @@ export function SiteHeader() {
               </Link>
             ))}
           </nav>
-          <WaitlistModal />
+          <WaitlistModal buttonClassName="site-header__waitlist-button" />
         </div>
       </div>
     </header>

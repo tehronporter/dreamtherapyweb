@@ -8,7 +8,6 @@ export const siteConfig = {
   url: "https://dreamtherapy.app",
   ogImage: "/images/oldreambuddy01.png",
   supportEmail: "support@dreamtherapy-placeholder.com",
-  appStoreUrl: "https://apps.apple.com/app/id0000000000",
   lastUpdated: "March 10, 2026",
   navLinks: [
     { href: "/", label: "Home" },
@@ -32,7 +31,8 @@ export const homeContent = {
     titleEnd: "We're Here to Help You Listen.",
     description:
       "DreamTherapy gently decodes the moods, symbols, and patterns in your dreams — especially for those processing trauma, grief, or deep emotional shifts.",
-    primaryCta: "View on the App Store",
+    primaryCta: "Join the waitlist",
+    availabilityNote: "App Store coming soon",
     orbit: "DreamChat · DreamBook · DreamCircle",
   },
   features: {
@@ -74,7 +74,7 @@ export const homeContent = {
     eyebrow: "Support and legal",
     title: "Support, privacy, and account help stay close at hand.",
     description:
-      "The launch surface stays minimal, but the important public paths remain easy to reach before and after download.",
+      "The launch surface stays minimal, but the important public paths remain easy to reach before and after release.",
   },
 };
 
@@ -266,7 +266,7 @@ export const supportTopics = [
   {
     title: "Billing and subscriptions",
     description:
-      "For App Store billing issues, Apple may handle the payment relationship directly. If you still need product support, contact us and describe the issue clearly.",
+      "Billing and subscription details will be shared when DreamTherapy launches. For now, contact us with waitlist, product, or access questions.",
   },
 ];
 
