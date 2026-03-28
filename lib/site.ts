@@ -7,7 +7,7 @@ export const siteConfig = {
     "A private place to record dreams, revisit them over time, and reflect with thoughtful AI guidance.",
   url: "https://dreamtherapy.app",
   ogImage: "/images/oldreambuddy01.png",
-  supportEmail: "support@dreamtherapy-placeholder.com",
+  supportEmail: "dreamtherapyapp@gmail.com",
   lastUpdated: "March 10, 2026",
   navLinks: [
     { href: "/", label: "Home" },
