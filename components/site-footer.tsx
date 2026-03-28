@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { siteConfig } from "@/lib/site";
 import { SiteLogo } from "@/components/site-logo";
 
@@ -24,15 +22,6 @@ export function SiteFooter() {
             {siteConfig.supportEmail}
           </a>
         </div>
-
-        <div className="site-footer__links">
-          {siteConfig.footerLinks.map((link) => (
-            <Link key={link.href} href={link.href}>
-              {link.label}
-            </Link>
-          ))}
-        </div>
-
         <p className="site-footer__legal">© 2026 DreamTherapy. All rights reserved.</p>
       </div>
     </footer>
