@@ -1,19 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { EmailCapture } from "@/components/email-capture";
 import { Section } from "@/components/section";
-import { WaitlistModal } from "@/components/waitlist-modal";
-import { buildMetadata, homeContent } from "@/lib/site";
+import { StructuredData } from "@/components/structured-data";
+import { buildMetadata, homeContent, siteConfig } from "@/lib/site";
 
 export const metadata = buildMetadata(
-  "Home",
-  "DreamTherapy is a calm, public-facing home for private dream journaling, thoughtful AI reflection, support, and legal details.",
+  "DreamTherapy",
+  "DreamTherapy is a calm dream journal and AI dream interpretation app for iPhone, with thoughtful guides on dream meanings, symbols, recurring dreams, and nightmares.",
   "/",
 );
 
 export default function HomePage() {
   return (
     <main>
+      <StructuredData data={[organizationSchema(), websiteSchema(), mobileAppSchema()]} />
       <section className="hero">
         <div className="hero__center">
           <p className="eyebrow hero__eyebrow">{homeContent.hero.eyebrow}</p>
@@ -41,11 +43,21 @@ export default function HomePage() {
           </h1>
           <p className="hero__description">{homeContent.hero.description}</p>
           <div className="button-row button-row--centered">
-            <WaitlistModal
-              buttonLabel={homeContent.hero.primaryCta}
-              buttonVariant="primary"
-            />
+            <a href={siteConfig.appStoreUrl} className="button button--primary">
+              {homeContent.hero.primaryCta}
+            </a>
+            <Link href="/dream-meanings" className="button button--secondary">
+              Explore dream meanings
+            </Link>
           </div>
+          <p className="hero__rating">
+            <span className="hero__rating-stars" aria-hidden="true">
+              {homeContent.appRating.stars}
+            </span>{" "}
+            <span className="hero__rating-text">
+              {homeContent.appRating.rating} · {homeContent.appRating.count}
+            </span>
+          </p>
           <p className="hero__availability">{homeContent.hero.availabilityNote}</p>
           <p className="hero__orbit">{homeContent.hero.orbit}</p>
         </div>
@@ -85,6 +97,22 @@ export default function HomePage() {
           ))}
         </div>
       </Section>
+
+      <Section
+        eyebrow={homeContent.testimonials.eyebrow}
+        title={homeContent.testimonials.title}
+      >
+        <div className="testimonial-grid">
+          {homeContent.testimonials.items.map((testimonial) => (
+            <blockquote key={testimonial.author} className="testimonial-card">
+              <p className="testimonial-card__text">&ldquo;{testimonial.text}&rdquo;</p>
+              <footer className="testimonial-card__author">{testimonial.author}</footer>
+            </blockquote>
+          ))}
+        </div>
+      </Section>
+
+      <EmailCapture />
 
       <Section
         eyebrow={homeContent.trust.eyebrow}
@@ -167,4 +195,55 @@ export default function HomePage() {
       </Section>
     </main>
   );
+}
+
+function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    logo: new URL(siteConfig.ogImage, siteConfig.url).toString(),
+    sameAs: [siteConfig.appStoreUrl],
+  };
+}
+
+function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    description: siteConfig.description,
+  };
+}
+
+function mobileAppSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name: siteConfig.name,
+    operatingSystem: "iOS",
+    applicationCategory: "LifestyleApplication",
+    url: siteConfig.url,
+    downloadUrl: siteConfig.appStoreUrl,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: homeContent.appRating.rating,
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "3",
+    },
+    description: siteConfig.description,
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+  };
 }

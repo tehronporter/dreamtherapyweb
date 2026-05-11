@@ -3,19 +3,34 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "DreamTherapy",
   shortName: "DreamTherapy",
+  creator: "Tehron Porter",
   description:
     "A private place to record dreams, revisit them over time, and reflect with thoughtful AI guidance.",
-  url: "https://dreamtherapy.app",
+  url: "https://www.dreamtherapy.app",
+  appStoreUrl: "https://apps.apple.com/us/app/dreamtherapy/id6759690782",
   ogImage: "/images/oldreambuddy01.png",
   supportEmail: "dreamtherapyapp@gmail.com",
   lastUpdated: "March 10, 2026",
   navLinks: [
     { href: "/", label: "Home" },
-    { href: "/privacy", label: "Privacy" },
-    { href: "/terms", label: "Terms" },
-    { href: "/support", label: "Support" },
+    { href: "/dream-meanings", label: "Meanings" },
+    { href: "/symbols", label: "Symbols" },
+    { href: "/guides", label: "Guides" },
+    { href: "/blog", label: "Blog" },
+    { href: "/nightmares", label: "Nightmares" },
   ],
   footerLinks: [
+    { href: "/dream-meanings", label: "Dream Meanings" },
+    { href: "/symbols", label: "Symbols" },
+    { href: "/guides", label: "Guides" },
+    { href: "/blog", label: "Blog" },
+    { href: "/nightmares", label: "Nightmares" },
+    { href: "/ai-dream-interpreter", label: "AI Dream Interpreter" },
+    { href: "/dream-journal-app", label: "Dream Journal App" },
+    { href: "/lucid-dreaming-app", label: "Lucid Dreaming App" },
+    { href: "/dream-tracker-app", label: "Dream Tracker App" },
+    { href: "/private-dream-journal", label: "Private Dream Journal" },
+    { href: "/about", label: "About" },
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Use" },
     { href: "/support", label: "Support" },
@@ -30,13 +45,13 @@ export const homeContent = {
     titleEmphasis: "Meaning.",
     titleEnd: "We're Here to Help You Listen.",
     description:
-      "DreamTherapy gently decodes the moods, symbols, and patterns in your dreams — especially for those processing trauma, grief, or deep emotional shifts.",
-    primaryCta: "Join the waitlist",
-    availabilityNote: "App Store coming soon",
+      "DreamTherapy helps you understand what your dreams may be saying — through symbolism, emotional context, and patterns that build over time. Private journaling. Reflective AI. Free on iPhone.",
+    primaryCta: "Download on the App Store",
+    availabilityNote: "Free · No account required · iPhone",
     orbit: "DreamChat · DreamBook · DreamCircle",
   },
   features: {
-    eyebrow: "Feature architecture",
+    eyebrow: "How it works",
     title: "The DreamTherapy Flow",
     description:
       "A daily rhythm of dreaming, interpreting, and reflecting.",
@@ -74,7 +89,43 @@ export const homeContent = {
     eyebrow: "Support and legal",
     title: "Support, privacy, and account help stay close at hand.",
     description:
-      "The launch surface stays minimal, but the important public paths remain easy to reach before and after release.",
+      "The public site stays minimal, but the important support, privacy, and account paths remain easy to reach.",
+  },
+  testimonials: {
+    eyebrow: "From the App Store",
+    title: "What dreamers are saying.",
+    items: [
+      {
+        title: "Good Insights!",
+        text: "I like this app because the feedback really does feel like a therapist talking to you and I like the follow up questions at the end of every interpretation. When you use this app a lot, it starts to give you monthly insights into your dream patterns that I find really helpful! Super easy to use and the little dream buddy is so cute lol",
+        author: "★★★★★ jsm.7777 — Apr 7",
+      },
+      {
+        title: "Wow!",
+        text: "The way it broke down and summarized everything was so clear and confirming, haven't experienced a response like that before!",
+        author: "★★★★★ JasonKels — Apr 9",
+      },
+      {
+        title: "So much fun!",
+        text: "So I am a heavy sleeper and have very vivid dreams, and this app has helped me explore and track my dreams and it's so much fun going back and rereading old dreams!",
+        author: "★★★★★ BrotherNois — Apr 2",
+      },
+    ],
+  },
+  appRating: {
+    stars: "★★★★★",
+    rating: "5.0",
+    count: "App Store",
+  },
+  emailCapture: {
+    eyebrow: "Stay in the loop",
+    title: "New dream guides, every week.",
+    description:
+      "We publish new dream meanings, symbol guides, and reflection content regularly. Drop your email and we'll send the good ones.",
+    placeholder: "Your email address",
+    cta: "Notify me",
+    successMessage: "You're on the list. We'll be in touch.",
+    privacyNote: "No spam. Unsubscribe any time.",
   },
 };
 
@@ -266,7 +317,7 @@ export const supportTopics = [
   {
     title: "Billing and subscriptions",
     description:
-      "Billing and subscription details will be shared when DreamTherapy launches. For now, contact us with waitlist, product, or access questions.",
+      "If you have questions about billing, subscriptions, or App Store access, contact support and include any helpful purchase details or screenshots.",
   },
 ];
 
@@ -281,21 +332,35 @@ export function buildMetadata(
   title: string,
   description: string,
   path = "/",
+  keywords: string[] = [],
+  openGraphType: "website" | "article" = "website",
 ): Metadata {
-  const fullTitle = `${title} | ${siteConfig.name}`;
+  const fullTitle =
+    title === siteConfig.name ? siteConfig.name : `${title} | ${siteConfig.name}`;
   const absoluteUrl = new URL(path, siteConfig.url).toString();
   const imageUrl = new URL(siteConfig.ogImage, siteConfig.url).toString();
 
   return {
     title: fullTitle,
     description,
+    keywords,
+    authors: [{ name: siteConfig.name }],
+    creator: siteConfig.name,
+    publisher: siteConfig.name,
     metadataBase: new URL(siteConfig.url),
+    alternates: {
+      canonical: absoluteUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
     openGraph: {
       title: fullTitle,
       description,
       url: absoluteUrl,
       siteName: siteConfig.name,
-      type: "website",
+      type: openGraphType,
       images: [
         {
           url: imageUrl,
