@@ -1,11 +1,12 @@
 :root {
   color-scheme: dark;
   --font-sans:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
     "Avenir Next",
     "Helvetica Neue",
     "Segoe UI",
-    -apple-system,
-    BlinkMacSystemFont,
     sans-serif;
   --canvas: #05070b;
   --canvas-elevated: #0b0f15;
@@ -27,7 +28,7 @@
   :root {
     color-scheme: light;
     --canvas: #ffffff;
-    --canvas-elevated: #f8faff;
+    --canvas-elevated: #ffffff;
     --surface: rgba(17, 17, 17, 0.03);
     --surface-strong: rgba(17, 17, 17, 0.05);
     --ink: #0f1115;
@@ -40,6 +41,14 @@
     --brand-mist: rgba(36, 76, 255, 0.1);
     --shadow-long: 0 45px 100px rgba(8, 12, 24, 0.12);
     --shadow-soft: 0 18px 48px rgba(8, 12, 24, 0.08);
+  }
+
+  body {
+    background: var(--canvas);
+  }
+
+  .page-shell::before {
+    display: none;
   }
 }
 
@@ -214,9 +223,9 @@ summary::-webkit-details-marker {
 
 .site-nav a {
   color: var(--text-secondary);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   white-space: nowrap;
   transition:
@@ -308,8 +317,8 @@ summary::-webkit-details-marker {
   gap: 1.75rem;
   background: #ffffff;
   color: #111111;
-  padding-top: 4.25rem;
-  padding-bottom: 5.75rem;
+  padding-top: 2.75rem;
+  padding-bottom: 3.5rem;
   text-align: center;
 }
 
@@ -394,7 +403,7 @@ summary::-webkit-details-marker {
 
 .page-title {
   font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.045em;
   text-wrap: balance;
 }
@@ -446,9 +455,9 @@ summary::-webkit-details-marker {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 2.75rem;
-  padding-top: 5.25rem;
-  padding-bottom: 5.25rem;
+  gap: 2.25rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .section__heading {
@@ -459,7 +468,7 @@ summary::-webkit-details-marker {
   margin: 0;
   color: var(--ink);
   font-size: clamp(2.1rem, 4.7vw, 3.65rem);
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: -0.045em;
   line-height: 1;
   text-wrap: balance;
@@ -619,6 +628,7 @@ summary::-webkit-details-marker {
   position: relative;
   overflow: hidden;
   padding: 1.15rem;
+  max-height: 480px;
   background:
     radial-gradient(circle at top, var(--brand-mist), transparent 55%),
     color-mix(in srgb, var(--canvas-elevated) 84%, transparent);
@@ -1344,8 +1354,8 @@ summary::-webkit-details-marker {
   }
 
   .hero {
-    padding-top: 3.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
   }
 
   .waitlist-dialog {
@@ -1596,4 +1606,21 @@ summary::-webkit-details-marker {
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.04em;
+}
+
+/* ─── Hero Privacy Pill ──────────────────────────────────────────── */
+
+.hero__privacy-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.5rem 0 0;
+  padding: 0.45rem 1rem;
+  border: 1px solid rgba(15, 17, 21, 0.12);
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.04);
+  color: #6c6c6f;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }

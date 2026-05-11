@@ -28,6 +28,9 @@ export default function HomePage() {
             {homeContent.hero.titleEnd}
           </h1>
           <p className="hero__description">{homeContent.hero.description}</p>
+          <p className="hero__privacy-pill">
+            <span aria-hidden="true">🔒</span> Your dreams are private
+          </p>
           <div className="button-row">
             <a href={siteConfig.appStoreUrl} className="button button--primary">
               {homeContent.hero.primaryCta}
