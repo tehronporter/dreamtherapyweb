@@ -129,19 +129,18 @@ export default function HomePage() {
               </p>
             </div>
             <div className="trust-essay__item">
-              <p className="trust-essay__title">Public trust paths</p>
+              <p className="trust-essay__title">Privacy-first by design</p>
               <p className="trust-essay__text">
-                Privacy, terms, support, and deletion guidance remain visible in
-                the footer and support flow instead of being held back until
-                release.
+                Your dream content stays on your device. Privacy, deletion, and
+                support guidance are always visible — not buried until you need
+                them.
               </p>
             </div>
             <div className="trust-essay__item">
-              <p className="trust-essay__title">Quiet interaction design</p>
+              <p className="trust-essay__title">No noise, no gamification</p>
               <p className="trust-essay__text">
-                The interface uses strong type, restrained motion, and generous
-                negative space so the product feels calm before it feels
-                technical.
+                No streaks. No push notification pressure. No social feeds. Just
+                a quiet space for your inner life to breathe.
               </p>
             </div>
           </div>

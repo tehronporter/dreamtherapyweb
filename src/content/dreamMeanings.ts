@@ -601,78 +601,6 @@ export const dreamMeanings: SEOContentItem[] = [
     keywords: ["dog dream meaning", "dream about dog", "dreaming of dogs", "dog in dream", "deceased pet dream"],
   }),
   buildDreamMeaning({
-    slug: "baby-dream-meaning",
-    title: "Baby Dream Meaning",
-    symbol: "baby",
-    situation: "A baby or newborn appears in your dream",
-    description: "Explore what baby dreams reveal about new beginnings, vulnerability, responsibility, growth, and the tender parts of yourself that want attention. Learn psychological and emotional meanings with journaling prompts.",
-    quickAnswer: "Baby dreams often signal new beginnings, vulnerable parts of yourself, growth, responsibility, or nurturing capacity. The emotional tone of the dream—whether you feel protective, anxious, overwhelmed, or delighted—often reveals what the dream is actually addressing.",
-    emotionalTheme: "new beginnings, vulnerability, potential, responsibility, protective love, or anxiety about change",
-    spiritualTheme: "birth of new consciousness, pure potential, innocence, renewal, and the sacred vulnerability of new life",
-    variations: "Holding a baby safely may reflect a protective relationship or the emergence of something vulnerable you are tending. A baby crying can suggest unmet needs—either in others or in yourself. A lost or abandoned baby often reflects anxiety about responsibility or feeling overwhelmed by care. Dreaming of being a baby yourself may point to regression, the wish to be cared for, or remembering a simpler time. A sick or dying baby is often a grief dream and usually reflects loss, transition, or fear of something fragile being harmed.",
-    prompts: "Ask yourself: What in my life feels new and tender right now? Am I nurturing something or someone? Do I feel responsible for something I'm not ready for? What part of me still needs care and protection?",
-    uniqueSection: {
-      heading: "Baby Dreams During Life Transitions",
-      body: "Dreams about babies often intensify during periods of significant change: becoming a parent, entering a new relationship, starting a new job, or facing a major life transition. The baby may not be literal—it may symbolize the fragile, newly-born version of yourself navigating unfamiliar territory. These dreams acknowledge that transformation always begins with vulnerability, and that's both frightening and necessary.",
-    },
-    relatedSlugs: ["pregnancy-dream-meaning", "house-dream-meaning", "water-dream-meaning", "dream-about-abandoned-house"],
-    keywords: ["baby dream meaning", "pregnant dreams", "newborn dream", "dream about baby", "dreaming of infants"],
-  }),
-  buildDreamMeaning({
-    slug: "money-dream-meaning",
-    title: "Money Dream Meaning",
-    symbol: "money",
-    situation: "Money appears, exchanges hands, or is lost in your dream",
-    description: "Understand what money dreams reveal about security, self-worth, power, anxiety, and your relationship with resources. Learn emotional and psychological meanings beyond literal financial interpretation.",
-    quickAnswer: "Money dreams usually reflect feelings about security, control, self-worth, and power—not literal financial prediction. The emotional tone matters most: finding money feels different from losing it, and that difference often reveals whether you're processing abundance anxiety or scarcity fear.",
-    emotionalTheme: "security, control, self-worth, power, anxiety about resources, or fear of loss and vulnerability",
-    spiritualTheme: "exchange of energy, self-value, the freedom that resources bring, and your sense of deservingness",
-    variations: "Finding money often feels like relief or luck, and may reflect confidence or an opportunity emerging. Losing money usually carries anxiety and may reflect fear of loss, wasted potential, or feeling depleted. Stealing money or being stolen from can point to guilt, boundary violations, or feeling powerless. Counting large amounts of money might reflect security, pride in accomplishment, or anxiety about managing what you have. Money that crumbles, fades, or turns out to be fake often reflects disappointment, false security, or the fragility of what you thought was solid.",
-    prompts: "Ask yourself: How secure do I feel right now? What am I afraid of losing? What resources am I struggling to manage? Do I feel worthy of what I have? Where in my life do I feel powerless?",
-    uniqueSection: {
-      heading: "Money Dreams and Self-Worth",
-      body: "Money in dreams often symbolizes self-worth more literally than finances. How you treat money in the dream—carelessly, anxiously, gratefully, greedily—can reflect how you're treating yourself. A dream where money slips through your fingers might not be about your bank account; it might be about self-sabotage or feeling undeserving. A dream where you hoard money might reflect scarcity consciousness or the belief that there's never enough.",
-    },
-    relatedSlugs: ["water-dream-meaning", "lost-dream-meaning", "work-dream-meaning", "house-dream-meaning"],
-    keywords: ["money dream meaning", "dreaming about money", "financial dreams", "dream about losing money", "dream about finding money"],
-  }),
-  buildDreamMeaning({
-    slug: "wedding-dream-meaning",
-    title: "Wedding Dream Meaning",
-    symbol: "wedding",
-    situation: "A wedding ceremony or wedding celebration appears in your dream",
-    description: "Discover what wedding dreams reveal about commitment, transformation, vulnerability, life transitions, and major change. Learn why these dreams appear and what emotional context reveals about their meaning.",
-    quickAnswer: "Wedding dreams usually signal commitment, transformation, or major life transition—not always romantic. The emotional tone is key: a joyful wedding has a different message than an anxious one, and both often reflect your relationship to big changes, not just relationships.",
-    emotionalTheme: "commitment, transformation, vulnerability, life transition, fear of change, or readiness for evolution",
-    spiritualTheme: "union of opposites, the sacred threshold of transformation, public declaration of identity, and the leap into the unknown",
-    variations: "Getting married yourself (whether you're in a relationship or not) often reflects a commitment you're making to yourself, a life change, or the integration of two parts of yourself. Watching someone else's wedding may point to envy, admiration, or the wish for commitment or change in your own life. A wedding that goes wrong—delays, cancellations, chaos—often reflects anxiety about a major change or fear that something won't work out. Leaving a wedding or refusing to go may suggest ambivalence about change or commitment. A wedding in an unusual or beautiful setting can reflect the specialness of what's shifting.",
-    prompts: "Ask yourself: What major change or commitment is happening in my life right now? Am I ready for this transformation? What am I afraid of losing? What am I excited to gain? Is there a part of myself I'm trying to integrate or unite?",
-    uniqueSection: {
-      heading: "Wedding Dreams Aren't Always About Romance",
-      body: "Wedding dreams are common even for people not in relationships or not thinking about marriage. That's because weddings symbolize the threshold between who you were and who you're becoming. A wedding dream might reflect a career change, a move to a new city, becoming a parent, recovering from loss, or any major life reorganization. The dream is marking a before-and-after moment, a public declaration that something significant is shifting.",
-    },
-    relatedSlugs: ["death-dream-meaning", "water-dream-meaning", "house-dream-meaning", "dream-about-ex"],
-    keywords: ["wedding dream meaning", "dream about wedding", "getting married dream", "marriage dreams", "wedding ceremony dream"],
-  }),
-  buildDreamMeaning({
-    slug: "school-dream-meaning",
-    title: "School Dream Meaning",
-    symbol: "school",
-    situation: "A school building, classroom, or school experience appears in your dream",
-    description: "Learn what school dreams reveal about learning, performance anxiety, authority, social dynamics, and unfinished lessons. Understand why these dreams often recur and what they signal about your current life.",
-    quickAnswer: "School dreams often reflect learning experiences, performance anxiety, authority dynamics, or the feeling of being tested. Whether you're a student or not, these dreams usually point to a lesson you're processing, a test you're facing, or a dynamic where you feel judged or unprepared.",
-    emotionalTheme: "performance anxiety, authority conflict, social insecurity, the pressure to succeed, or unfinished learning",
-    spiritualTheme: "spiritual apprenticeship, the initiate's journey, tests of character, and the eternal student within",
-    variations: "Failing a test or exam is one of the most common anxiety dreams and usually reflects fear of failure in some area of life—not necessarily academic. Being unprepared or running late to class often points to time pressure or feeling behind. Returning to your old school after many years usually reflects nostalgia, the wish to return to an easier time, or unfinished business. Being the teacher rather than the student may reflect readiness to step into authority or knowledge you've gained. Bullying or social conflict in school dreams often echoes current relationship tensions.",
-    prompts: "Ask yourself: What am I being tested on right now in my waking life? Do I feel prepared? What authority figure or dynamic is creating pressure? What lesson have I not yet learned? Where do I feel behind or unprepared?",
-    uniqueSection: {
-      heading: "Why School Dreams Never Fully Stop",
-      body: "School dreams are remarkably common even decades after graduating. That's because school is often where we first learn about performance, judgment, social hierarchy, and the anxiety of being tested. These dreams resurface whenever we face similar dynamics as adults: new jobs where we feel incompetent, relationships where we fear judgment, or situations where we're learning something difficult. The dream language reverts to school because it's a universal symbol for that feeling of standing before an authority, unprepared and vulnerable.",
-    },
-    relatedSlugs: ["work-dream-meaning", "nightmare-about-being-chased", "test-anxiety-dream", "authority-figure-dream"],
-    keywords: ["school dream meaning", "dream about school", "exam dream", "test anxiety dream", "back to school dream"],
-  }),
-  buildDreamMeaning({
     slug: "work-dream-meaning",
     title: "Work Dream Meaning",
     symbol: "work",
@@ -689,5 +617,120 @@ export const dreamMeanings: SEOContentItem[] = [
     },
     relatedSlugs: ["money-dream-meaning", "house-dream-meaning", "school-dream-meaning", "nightmare-about-being-chased"],
     keywords: ["work dream meaning", "job dream", "workplace dream", "dream about work", "professional anxiety dream"],
+  }),
+  buildDreamMeaning({
+    slug: "fire-dream-meaning",
+    title: "Fire Dream Meaning",
+    symbol: "Fire",
+    situation: "Dreaming about fire",
+    description:
+      "What does fire in a dream mean? Fire can symbolize passion, destruction, transformation, anger, or purification. Learn what burning, wildfires, candles, and house fires may reveal in your dreams.",
+    quickAnswer:
+      "Fire dreams often reflect intense emotion, transformation, anger, passion, or destruction. Whether the fire feels threatening or beautiful usually tells you more than the fire itself — cleansing flames carry a different message from a wildfire out of control.",
+    emotionalTheme: "passion, anger, transformation, destruction, purification, or intensity of feeling",
+    spiritualTheme: "purification, illumination, the phoenix cycle, and the sacred energy of radical change",
+    variations:
+      "A controlled fire such as a campfire or candle may suggest warmth, focus, or intentional transformation. A wildfire or house fire can reflect urgency, loss of control, or an emotion that has grown beyond its container. Being burned may point to a painful consequence or a feeling of being harmed by something too close. Watching fire from a distance may suggest safe awareness of intensity in your life. Starting a fire yourself can reflect agency, anger, or the deliberate release of something.",
+    prompts:
+      "Ask yourself: What in my life feels like it is burning, intensifying, or clearing away? Is the fire something I started or something that found me? Where in life do I feel heat — passion, anger, urgency, or pressure?",
+    uniqueSection: {
+      heading: "Why Fire Dreams Can Feel Both Beautiful And Terrifying",
+      body:
+        "Fire is one of the few symbols that can feel like pure destruction and pure renewal at the same moment. In dreams, this duality often reflects an emotional state that contains both endings and beginnings at once — a relationship ending that also feels like freedom, a painful transformation that is also necessary, a rage that also carries a kind of clarity.\n\nIf the fire in your dream felt frightening, it may be showing you something you cannot yet face directly. If it felt beautiful or awe-inspiring, the dream may be acknowledging that something important is changing, even if change is uncomfortable.",
+    },
+    relatedSlugs: ["death-dream-meaning", "water-dream-meaning", "fire", "dream-symbols-and-emotions"],
+    keywords: ["fire dream meaning", "dream about fire", "burning dream", "house fire dream", "wildfire dream"],
+  }),
+  buildDreamMeaning({
+    slug: "ocean-dream-meaning",
+    title: "Ocean Dream Meaning",
+    symbol: "The ocean",
+    situation: "Dreaming about the ocean",
+    description:
+      "What does the ocean mean in a dream? Ocean dreams reflect emotional depth, the unconscious mind, vastness, and feelings too large to fully contain. A calm guide to what the sea may be saying.",
+    quickAnswer:
+      "The ocean in a dream often represents the unconscious mind, emotional vastness, depth, and what lies beneath the surface of your awareness. The state of the water — calm, stormy, dark, or clear — usually reflects the emotional state the dream is pointing toward.",
+    emotionalTheme: "emotional depth, vastness, the unconscious, overwhelm, peace, awe, or what lies beneath the surface",
+    spiritualTheme: "the collective unconscious, eternity, surrender, and the mystery of what is too large for the mind to contain",
+    variations:
+      "A calm ocean often reflects emotional peace, clarity, or a feeling of being held by something vast. A stormy ocean can suggest overwhelming emotion, life turbulence, or feeling tossed by forces outside your control. Swimming comfortably in the ocean may point toward confidence with your emotional life. Drowning or being dragged under suggests overwhelm or a feeling that something is larger than you can manage. Standing at the shore often reflects a threshold: the awareness of depth without yet entering it.",
+    prompts:
+      "Ask yourself: Was I in the water or watching from the shore? Did the ocean feel safe or threatening? What emotion in my life right now feels too large, too deep, or too unknown to look at directly?",
+    uniqueSection: {
+      heading: "The Ocean as the Unconscious Mind",
+      body:
+        "The ocean appears so often in dreams about the inner life because it can hold more than any single feeling. It suggests depth that extends beyond what can be seen, movement that continues even when the surface appears still, and life that exists in layers you have not yet visited.\n\nWhen the ocean appears in a dream, it often marks a moment when the unconscious mind is making itself known — through awe, fear, longing, or the simple sense that you are standing at the edge of something much larger than your daily life. These dreams are rarely about literal water. They are usually about scale: something in you is larger than you have been treating it.",
+    },
+    relatedSlugs: ["water-dream-meaning", "drowning-dream-meaning", "ocean", "falling-dream-meaning"],
+    keywords: ["ocean dream meaning", "dream about ocean", "sea dream", "dreaming of the ocean", "waves dream meaning"],
+  }),
+  buildDreamMeaning({
+    slug: "forest-dream-meaning",
+    title: "Forest Dream Meaning",
+    symbol: "A forest",
+    situation: "Dreaming about a forest",
+    description:
+      "What does a forest mean in a dream? Forest dreams often symbolize the unconscious mind, the unknown self, mystery, solitude, or a journey through something complex and uncharted.",
+    quickAnswer:
+      "A forest in a dream often represents the unconscious mind, the parts of yourself not yet fully known, mystery, or the feeling of moving through something complex without a clear path. Whether the forest feels welcoming or threatening usually reflects your relationship to the unknown.",
+    emotionalTheme: "mystery, the unknown self, solitude, being lost, inner wilderness, or complexity without a clear path",
+    spiritualTheme: "the inner wildness, the journey of individuation, ancestral memory, and the sacred space between known and unknown",
+    variations:
+      "A dark or dense forest can suggest feeling lost, overwhelmed by complexity, or confronting parts of the self that have not yet been explored. A beautiful, light-filled forest may reflect solitude, peace, or trust in your own inner guidance. Being chased through a forest intensifies the sense of running from something unresolved. Finding a path or clearing suggests the beginning of clarity or direction within a complex situation. Animals in the forest often appear as symbolic guides, instincts, or shadow aspects of the dreamer.",
+    prompts:
+      "Ask yourself: Was I lost or exploring? Did the forest feel threatening or beautiful? What in my life feels complex, uncharted, or full of things I have not yet named?",
+    uniqueSection: {
+      heading: "Forests as the Territory of the Inner Self",
+      body:
+        "In many dream traditions and myths, the forest is the place where the ordinary world ends and the inner world begins. It is where the familiar gives way to instinct, where the path disappears and the self must navigate by feel rather than by map.\n\nForest dreams often appear during periods of significant inner exploration: therapy, grief, major transition, or any time life becomes more complex than your current map can explain. Rather than treating the forest as danger, consider that it may be an invitation — to move through something unknown, to trust your instincts, and to find out what you discover on the other side.",
+    },
+    relatedSlugs: ["being-chased-dream-meaning", "lost-dream-meaning", "water-dream-meaning", "jungian-dream-analysis"],
+    keywords: ["forest dream meaning", "dream about forest", "woods dream", "lost in forest dream", "dark forest dream"],
+  }),
+  buildDreamMeaning({
+    slug: "car-dream-meaning",
+    title: "Car Dream Meaning",
+    symbol: "A car",
+    situation: "Dreaming about a car",
+    description:
+      "What does a car mean in a dream? Cars in dreams often reflect direction, control, drive, and autonomy. Learn what driving, being a passenger, or losing control of a car may reveal about your waking life.",
+    quickAnswer:
+      "A car in a dream often represents direction, personal drive, control, and autonomy — the vehicle through which you move through life. Whether you are driving, a passenger, or watching from outside usually reveals how much agency you feel right now.",
+    emotionalTheme: "direction, control, personal drive, autonomy, or a life path that feels stable, uncertain, or too fast",
+    spiritualTheme: "the vehicle of the self, personal will, the journey of becoming, and movement toward what matters",
+    variations:
+      "Driving confidently may reflect a sense of direction and purpose. Losing control of the car can suggest feeling overwhelmed, that something in life is moving too fast, or that a situation has outpaced your ability to manage it. Being a passenger — especially in the back seat — often reflects giving control to someone else or feeling carried by circumstances. A car breaking down may signal exhaustion, a stalled direction, or the need to pause before continuing. Driving in reverse can suggest looking backward, reconsidering, or feeling unable to move forward.",
+    prompts:
+      "Ask yourself: Who was driving? Did I feel in control? Where was I going, and did the destination feel right? What in my waking life is moving too fast, too slow, or in the wrong direction?",
+    uniqueSection: {
+      heading: "Whose Hands Are on the Wheel",
+      body:
+        "The most revealing detail in a car dream is often not the car itself but who is driving. If you are behind the wheel, the dream may be asking about your sense of agency and direction. If someone else is driving, the dream may reflect a relationship, a situation, or a belief system that is currently steering your life more than you are.\n\nThis is not always about control in the rigid sense. Sometimes being a passenger in a dream reflects healthy trust. But if the ride felt uncomfortable, too fast, or headed somewhere you didn't want to go, the dream may be inviting you to consider where you have given your autonomy away.",
+    },
+    relatedSlugs: ["car-accident-dream-meaning", "lost-dream-meaning", "flying-dream-meaning", "being-chased-dream-meaning"],
+    keywords: ["car dream meaning", "dream about car", "driving dream", "car breaking down dream", "car out of control dream"],
+  }),
+  buildDreamMeaning({
+    slug: "hospital-dream-meaning",
+    title: "Hospital Dream Meaning",
+    symbol: "A hospital",
+    situation: "Dreaming about a hospital",
+    description:
+      "What does a hospital in a dream mean? Hospital dreams often reflect healing, vulnerability, health anxiety, recovery, or a part of your life in need of care and attention.",
+    quickAnswer:
+      "Hospital dreams often point toward healing, vulnerability, health anxiety, or a part of your inner life that needs attention and care. The emotional tone — whether the hospital feels safe or frightening — usually reveals whether the dream is about receiving help or fearing what needs to be addressed.",
+    emotionalTheme: "healing, vulnerability, health anxiety, recovery, care, or something in need of urgent attention",
+    spiritualTheme: "the sacred act of healing, wholeness, surrender to care, and the humility of needing help",
+    variations:
+      "Being a patient may reflect vulnerability, the need for care, or a part of your life that requires healing attention. Visiting someone in a hospital can suggest concern about a relationship or the projection of your own need for care onto another. Working in a hospital may reflect a caretaking role in waking life, the weight of responsibility, or the emotional labor of holding others' difficulty. An empty or abandoned hospital can suggest grief, the absence of expected care, or anxiety about what goes unaddressed.",
+    prompts:
+      "Ask yourself: Was I the patient or the caretaker? Did the hospital feel safe or frightening? What part of my life — physical, emotional, or relational — currently feels like it needs care I have not given it?",
+    uniqueSection: {
+      heading: "Hospital Dreams Are Often About Emotional Healing",
+      body:
+        "Hospital dreams are rarely only about physical health. Because hospitals are the places we associate with our most vulnerable moments, they become powerful symbols for any kind of healing the self is trying to do — emotional repair, the aftermath of loss, the slow work of recovering from something painful, or the need to finally address something that has been avoided.\n\nIf the hospital in your dream felt frightening, it may reflect an avoidance of something that needs attention. If it felt like a place of genuine care, the dream may be acknowledging that healing is possible — and that you may already be in the middle of it.",
+    },
+    relatedSlugs: ["death-dream-meaning", "baby-dream-meaning", "water-dream-meaning", "nightmare-about-dying"],
+    keywords: ["hospital dream meaning", "dream about hospital", "being sick in a dream", "medical dream", "healing dream"],
   }),
 ];
