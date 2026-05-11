@@ -234,16 +234,17 @@ summary::-webkit-details-marker {
 .site-header__waitlist-button {
   min-height: 2.8rem;
   padding: 0.75rem 1.1rem;
-  background: color-mix(in srgb, var(--surface) 100%, transparent);
-  color: var(--ink);
+  background: var(--brand);
+  color: #ffffff;
+  border-color: transparent;
   font-size: 0.84rem;
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
 .site-header__waitlist-button:hover {
-  border-color: color-mix(in srgb, var(--brand) 22%, var(--divider));
-  background: color-mix(in srgb, var(--surface-strong) 100%, transparent);
+  background: var(--brand-soft);
+  border-color: transparent;
 }
 
 .button {
@@ -1544,4 +1545,55 @@ summary::-webkit-details-marker {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+}
+
+/* ─── Hero Split Layout ──────────────────────────────────────────── */
+
+.hero--split {
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 4rem;
+}
+
+.hero__left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__right {
+  flex: 0 0 auto;
+  max-width: 28rem;
+}
+
+.hero--split .hero__rating {
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .hero--split {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero--split .hero__left {
+    align-items: center;
+  }
+
+  .hero--split .hero__rating {
+    justify-content: center;
+  }
+}
+
+/* ─── App CTA Trust Line ─────────────────────────────────────────── */
+
+.app-cta__trust {
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }

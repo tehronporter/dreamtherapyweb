@@ -16,23 +16,9 @@ export default function HomePage() {
   return (
     <main>
       <StructuredData data={[organizationSchema(), websiteSchema(), mobileAppSchema()]} />
-      <section className="hero">
-        <div className="hero__center">
-          <p className="eyebrow hero__eyebrow">{homeContent.hero.eyebrow}</p>
-          <div className="hero__mascot-stage" aria-hidden="true">
-            <div className="hero__mascot-shadow" />
-            <Image
-              src="/images/dreambuddy_dreamchat.png"
-              alt=""
-              width={1536}
-              height={1024}
-              className="hero__mascot"
-              priority
-            />
-          </div>
-        </div>
-
-        <div className="hero__content hero__content--centered">
+      <section className="hero hero--split">
+        <div className="hero__left">
+          <p className="eyebrow">{homeContent.hero.eyebrow}</p>
           <h1 className="hero__title">
             {homeContent.hero.titleLead}{" "}
             <span className="hero__title-emphasis">
@@ -42,7 +28,7 @@ export default function HomePage() {
             {homeContent.hero.titleEnd}
           </h1>
           <p className="hero__description">{homeContent.hero.description}</p>
-          <div className="button-row button-row--centered">
+          <div className="button-row">
             <a href={siteConfig.appStoreUrl} className="button button--primary">
               {homeContent.hero.primaryCta}
             </a>
@@ -60,6 +46,20 @@ export default function HomePage() {
           </p>
           <p className="hero__availability">{homeContent.hero.availabilityNote}</p>
           <p className="hero__orbit">{homeContent.hero.orbit}</p>
+        </div>
+
+        <div className="hero__right" aria-hidden="true">
+          <div className="hero__mascot-stage">
+            <div className="hero__mascot-shadow" />
+            <Image
+              src="/images/dreambuddy_dreamchat.png"
+              alt=""
+              width={1536}
+              height={1024}
+              className="hero__mascot"
+              priority
+            />
+          </div>
         </div>
       </section>
 

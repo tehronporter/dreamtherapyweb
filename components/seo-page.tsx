@@ -142,8 +142,8 @@ export function ExploreByCategory({
   return (
     <section className="related-content">
       <div>
-        <p className="eyebrow">Explore the cluster</p>
-        <h2>Move between meanings, symbols, guides, and app pages.</h2>
+        <p className="eyebrow">Keep exploring</p>
+        <h2>More from DreamTherapy.</h2>
       </div>
       <div className="hub-pills">
         {links.map((link) => (
@@ -195,6 +195,7 @@ export function SEOPageLayout({
       />
       <article className="seo-content">
         <QuickAnswerBox answer={item.quickAnswer} />
+        <AppCTA />
         {item.sections.map((section) => (
           <section key={section.heading} className="seo-content__section">
             <h2>{section.heading}</h2>
@@ -212,7 +213,6 @@ export function SEOPageLayout({
         ) : null}
         <FAQSection faqs={item.faqs} />
         {children}
-        <AppCTA />
       </article>
       <ExploreByCategory category={item.category} />
       <RelatedContentGrid items={related} />

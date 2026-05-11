@@ -7,7 +7,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <SiteLogo />
+        <SiteLogo withWordmark={true} />
 
         <div className="site-header__actions">
           <nav className="site-nav" aria-label="Primary">
@@ -19,7 +19,7 @@ export function SiteHeader() {
           </nav>
           <a
             href={siteConfig.appStoreUrl}
-            className="button button--secondary site-header__waitlist-button"
+            className="button site-header__waitlist-button"
           >
             Get the App
           </a>
